@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="{{ url_for('static', filename='css/dashBoard.css') }}">
+
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Tasty Recipes</h1>
+        <ul>
+          <li><a href="/home">Discover</a></li>
+          <li><a href="/upload">Upload</a></li>
+          <li><a href="/feedback">Feedback</a></li>
+          <li class="dashboard"><a class="dash" href="/dashboard">MyProfile</a></li>      
+        </ul>
+      </nav>
+    <div class="body">
+    <div class="profile-container">
+        <!-- Profile Section -->
+        <div class="profile-header">
+            <div class="profile-pic">
+                <img class="profilepic" 
+                src="{{ profile_picture if profile_picture else url_for('static', filename='img/profile.jpg') }}" 
+                alt="Profile Picture">            <h2 class="user-name">{{ profile_name }}</h2>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="menu-bar">
+            <a href="/profile_settings" class="menu-item">Profile Settings </a>
+            <a href="#my-favourites" class="menu-item">My Favourites</a>
+            <a href="#privacy-settings" class="menu-item">Privacy Settings</a>
+            <a href="#followers" class="menu-item">Followers</a>
+            <a href="#following" class="menu-item">Following</a>
+            <a href="/logout" class="menu-item">Logout</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

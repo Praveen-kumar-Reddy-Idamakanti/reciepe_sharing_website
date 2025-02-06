@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Sharing Platform</title>
+  <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+  .home-background{
+    /* background:  url('{{url_for('static',filename='img/index.avif')}}') no-repeat center center/cover; */
+    height: 100vh;
+    opacity: 0.85;
+    color:black
+  }
+</style>
+</head>
+<body>
+  <div class="home-background">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="logo">Tasty Recipes</h1>
+      <ul>
+        <li><a href="/home">Discover</a></li>
+        <li><a href="/upload">Upload</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li class="dashboard"><img class="profilepic" src="{{url_for('static',filename='img/index.avif')}}" alt="">
+          <a class="dash" href="/dashboard">MyProfile</a></li>
+        
+    </ul>
+    </nav>
+      <h2 class="h2">Recently Played</h2>
+      <div class="card-container">
+        <div class="card">
+        <img src="{{url_for('static',filename='img/pappu.jpg')}}" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="user_name">ahcsksnl</p>
+      <p>ANDHRA Style curry</p>
+      <button>get More details</button>
+      </div>
+      <div class="card">
+        <img src="{{url_for('static',filename='img/pappu.jpg')}}" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="user_name">ahcsksnl</p>
+      <p>ANDHRA Style curry</p>
+      <button>get More details</button>
+      </div>
+      <div class="card">
+        <img src="{{url_for('static',filename='img/pappu.jpg')}}" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="user_name">ahcsksnl</p>
+      <p>ANDHRA Style curry</p>
+      <button>get More details</button>
+      </div>
+    </div>
+    <h2>Recently Played</h2>
+      <div class="card-container">
+        <div class="card">
+        <img src="{{url_for('static',filename='img/pappu.jpg')}}" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="user_name">ahcsksnl</p>
+      <p>ANDHRA Style curry</p>
+      <button>get More details</button>
+      </div>
+    </div>
+    <h2>Recently Played</h2>
+      <div class="card-container">
+        <div class="card">
+        <img src="{{url_for('static',filename='img/pappu.jpg')}}" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="user_name">ahcsksnl</p>
+      <p>ANDHRA Style curry</p>
+      <button>get More details</button>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

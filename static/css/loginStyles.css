@@ -1,0 +1,120 @@
+/* Login/Registration Form Styling */
+*{
+  margin: 0;
+  padding: 0;
+}
+.form-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-blend-mode: darken;
+  }
+  
+  .form-card {
+    border: 1px solid rgba(255, 255, 255, 0.304);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+
+    width: 100%;
+    height: 550px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .form-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff; /* Deep Brown */
+    padding-bottom: 20px;
+  }
+  
+  .form-card label {
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 2rem 0.5rem 0.5rem;
+    color: #ffffff;
+  }
+  
+  .form-card input {
+    width: 90%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #F9F9F9; /* Off-White */
+  }
+  
+  .form-card input:focus {
+    border-color: #FBBF24; /* Warm Orange */
+    outline: none;
+  }
+  
+  .btn-primary {
+    margin-top: 30px;
+    background-color: #FBBF24; /* Warm Orange */
+    color: #4B2E2A; /* Deep Brown */
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #F59E0B; /* Darker Orange */
+  }
+  
+  .form-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-footer a {
+    color: #F59E0B; /* Darker Orange */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+/* Additional styling for register form */
+.form-card input {
+    margin-bottom: 1.2rem; /* Increased margin for better spacing */
+  }
+  
+  .form-card label {
+    font-weight: bold; /* Emphasize labels */
+  }
+    
+  .form-footer {
+    margin-top: 18px;
+    color: white;
+    font-size: 16px;
+  }
+  .form-container .form-card .content{
+    margin-top: 10px;
+  }
+  .form-container .form-card .content label {
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0rem 0.5rem 0.5rem;
+    color: #ffffff;
+  }
+  .content .btn-primary {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .content .form-footer-register{
+    color: white;
+  }
